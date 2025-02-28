@@ -35,12 +35,38 @@
             margin: 0 15px;
             font-size: 18px;
         }
+        .faq-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .faq-btn:hover {
+            background: #0056b3;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .back-btn:hover {
+            background: darkorange;
+        }
         section {
             padding: 20px;
             background: #ffffff;
             margin: 20px 0;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         h2 {
             color: #35424a;
@@ -58,8 +84,18 @@
             color: white;
             margin-top: 20px;
         }
+        .faq-item {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 5px solid #007BFF;
+            border-radius: 5px;
+        }
+        .faq-item h3 {
+            color: #007BFF;
+            margin-bottom: 5px;
+        }
     </style>
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>How to Raise a Ticket</header>
@@ -73,70 +109,8 @@
             <h2>Overview</h2>
             <p>Raising a ticket is the quickest way to get assistance and ensure your issue is tracked and resolved promptly.</p>
         </section>
-        <section id="steps">
-            <h2>Step-by-Step Guide</h2>
-            <ol>
-                <li><strong>Access the ticketing system:</strong> <a href="https://helpcenter.jumia.com/hc/en-gb/requests/new">Visit the Help Center</a> and log in if prompted.</li>
-                <li><strong>Select Request Type:</strong> Choose "IT SUPPORT (NOC)".</li>
-                <img src="images/screenshot_4.png" alt="screenshot_4">
-                <li><strong>Fill out ticket details:</strong>
-                    <ul>
-                        <li><strong>Topic:</strong> Select the specific topic related to your request.</li>
-                        <h2>Ticket Details</h2>
-            <table border="1" width="100%" cellpadding="10" cellspacing="0">
-                <tr>
-                    <th>Category</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td><strong>Access & Permissions</strong></td>
-                    <td>Account management, onboarding/offboarding, password resets.</td>
-                </tr>
-                <tr>
-                    <td><strong>Asset Management</strong></td>
-                    <td>Asset disposal, relocation, and information requests.</td>
-                </tr>
-                <tr>
-                    <td><strong>Email Issues</strong></td>
-                    <td>Aliases, auto-replies, mailing lists, and troubleshooting.</td>
-                </tr>
-                <tr>
-                    <td><strong>Google Drive/Email Upgrades</strong></td>
-                    <td>Storage upgrades, file recovery, and ownership changes.</td>
-                </tr>
-                <tr>
-                    <td><strong>Hardware Issues</strong></td>
-                    <td>Device repair, printer/scanner support, and replacements.</td>
-                </tr>
-                <tr>
-                    <td><strong>Network Issues</strong></td>
-                    <td>Connectivity problems, slow performance, or outages.</td>
-                </tr>
-                <tr>
-                    <td><strong>Software Requests</strong></td>
-                    <td>Installation, upgrades, troubleshooting.</td>
-                </tr>
-                <tr>
-                    <td><strong>Telephony Issues</strong></td>
-                    <td>VoIP/Xcally problems, modifications, and call recording retrieval.</td>
-                </tr>
-            </table>
-                        <li><strong>Country:</strong> Select "Kenya" to route to the correct local IT team.</li>
-                        <li><strong>Subject:</strong> Write a concise title <span style="color: orangered; font-weight: bold;">(e.g., "Password Reset Request").</span></li>
-                        <li><strong>Description:</strong> Clearly explain the issue or request, providing relevant details such
-                            as affected systems or steps to reproduce the problem.<span style="color: orangered; font-weight: bold;">(e.g.,.<br>
-                            Requesting password reset for the agent below J*******j***.ext@jumia.com(input
-                            agent’s email)<br>
-                            Justification:Agent just returned from contract break.<br> +E****j***@jumia.com (input manager’s email) for approval.)</span><br></li>
-                        <li><strong>Attachments:</strong>You can upload any supporting files & screenshots for clarity.</li>
-                        <img src="images/screenshot_2.png" alt="screenshot_2">
-                    </ul>
-                </li>
-                <li><strong>Submit your ticket:</strong> Review details and click "Submit".</li>
-                <img src="images/screenshot_8.png" alt="screenshot_8">
-                <li><strong>Track your ticket:</strong>You will receive an email with a confirmation message that your request has been
-                    received with your ticket ID.Use this ticket ID for any follow ups or inquiries.</li>
-            </ol>
+        <section>
+            <a href="index.html" class="back-btn">⬅ Back to Dashboard</a>
         </section>
         <section id="faq">
             <h2>Frequently Asked Questions (FAQ)</h2>
@@ -151,13 +125,9 @@
             <div class="faq-item">
                 <h3>❓ Can I attach screenshots?</h3>
                 <p>Yes, you can upload any supporting files & screenshots for clarity.</p>
-            </div>        
+            </div>
         </section>
     </div>
-</div>
-
-<a href="index.html" class="btn">⬅ Back to Dashboard</a>
-</div>  
     <footer>
         <p>Need help? Contact IT Support at itsupport.ke@jumia.com</p>
     </footer>
@@ -166,6 +136,6 @@
             event.preventDefault();
             document.querySelector('#faq').scrollIntoView({ behavior: 'smooth' });
         });
-    </script>  
+    </script>
 </body>
 </html>
